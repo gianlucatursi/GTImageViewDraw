@@ -1,8 +1,3 @@
-<style>
-img{
-	width:30%;
-}
-</style>
 ## GTImageView Draw
 
 This is a simple category to make your UIImageView drawable.
