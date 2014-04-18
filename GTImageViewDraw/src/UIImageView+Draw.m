@@ -29,7 +29,7 @@ BOOL mouseSwiped;
     activate = YES;
     self.userInteractionEnabled = YES;
     mainImg = self.image;
-    mainImageView = [[UIImageView alloc] initWithFrame:self.frame];
+    mainImageView = [[UIImageView alloc] initWithFrame:self.bounds];
     [self addSubview:mainImageView];
     
 }
@@ -45,7 +45,7 @@ BOOL mouseSwiped;
      _isErasing = NO;
     [mainImageView removeFromSuperview];
     mainImageView = nil;
-    mainImageView = [[UIImageView alloc] initWithFrame:self.frame];
+    mainImageView = [[UIImageView alloc] initWithFrame:self.bounds];
     [self addSubview:mainImageView];
     
 }
@@ -179,4 +179,5 @@ BOOL mouseSwiped;
         }
     }
 }
+
 @end
